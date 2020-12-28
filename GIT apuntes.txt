@@ -1,0 +1,27 @@
+GIT remote -v - Trae la direccion remota en la cual esta mi proyecto.
+
+GIT tag - Para saber si hay tags en nuestros proyectos.
+
+(Para crear un tag, primero debemos de ver los commits y ver el commit sobre el cual queremos
+hacer el tags, osea el commit sobre el cual queremos iniciar la version (EJECUTAMOS UN GIT LOG --ONELINE))
+
+PARA CREAR UN TAG o VERSION:
+
+GIT TAG -a v0.1 -m "Mensaje sobre la version" (el ID del commit sin los parentesis)
+
+GIT show-ref --tags - Muestra a que commit pertenece dicho tag.
+
+COMANDO  PARA ENVIAR LOS TAGS AL REPOSITORIO REMOTO:
+
+GIT push origin --tags 
+
+COMANDO PARA ELIMINAR UN TAG DE *GIT*: 
+
+GIT tag -d (la version o tag sin parentesis ejemplo: v0.1)
+
+COMANDO PARA ELIMINAR UN TAG DEl REPOSITORIO REMOTO *GITHUB*:
+
+GIT push origin :refs/tags/(la version o tag sin parentesis ejemplo: v0.1)
+
+
+GITk - Abre una GUI ventana informativa.
