@@ -1,3 +1,78 @@
+
+
+git innit - inicializa un repositorio.
+
+git status - Revisa el estado del repositorio.
+
+git add - adicciona un repositorio. (de aqui pasa al stage al OBJETO que se al
+macena en la memoria RAM).
+
+git  commit -m '...menssage' - se versiona el codigo con un mensaje.
+(Pasa a la rama)
+
+git log --oneline - muestra un log de los commits con sus id en una sola linea.
+
+git checkout 'aqui sin comillas va el id del commit' - con este comando podremos regresar a un commit determinado por su ID.
+
+git checkout master - para volver commit anterior.
+
+
+------------------------------------------------------------------------
+
+
+git show - muestra el historial de cambios con todos los ajustes o 
+cambios realizado, de lo color rojo lo eliminado y de color verde
+los agregados.
+(Para salir de este comando utilizamos la q)
+
+git add .   - agrega todos los documento con modificacion al Stage, para luego
+ser transladados al repositorio con un  commit.
+
+
+git reset 'id sin comillas' -hard - esto resorna o se restable al commit que indicas con el ID, lo cual al llegar a ese commit 
+borra todos los posteriores al en caso de que exista.
+
+
+git branch 'Nombre de la rama sin comillas'  - sirve para crear una rama
+ y tambien para consultar las ramas que existen.
+
+
+git merge 'La rama que deseo unir sin comillas' - Esto me permite unir una 
+rama con otra, MUY IMPORTANTE: 1) posicionarse en la rama a la cual queremos
+traer los cambios(Porque el merge trae los cambios a la rama que estamos
+posicionados), 2) ejecutar el comando git merge 'RAMA'. Aqui se generara un
+nuevo commit.
+
+.gitignore -  Este es un documento que me permite ignorar carpetas y archivos 
+para que no sean agregado en el repositorio remoto a la ahora de hacer un push
+, con este evitamos archivos pesados como la carpeta nodemodule, archivos de 
+compuser de PHP, mp4, entre otros.
+
+
+git remote add origin 'URL sin comillas' - Permite subir nuestro proyecto
+al repositorio remoto.
+
+Para cambiar el ORIGEN DEL PROYECTO REMOTO debemos de ir a la carpeta .git
+y en el archivo CONFIG configurar el ORIGEN REMOTO con la nueva URL.
+
+
+git push origin master (O rama determinada (LOS PARENTESI NO SE DEBEN DE INCLUIR))
+ -  esto nos permite subir lo ultimo que hemos trabajado en nuestro proyecto, 
+osea los ultimos cambios generados.
+
+git pull origin (Rama a la que queremos afectar) - con este comando traemos
+la ultima version de un proyecto. Trae los ultimos commits de una rama
+determinada.
+
+git clone - con este comando traemos el proyecto completo a nuestra maquina
+local.
+
+El Sufijo *Origin* determina la rama a la cual queremos hacer u obtener 
+los cambio.
+
+cat .git/config -  Verify your configuration by displaying your configuration file:
+
+-------------------------------------------------------------------
 GIT remote -v - Trae la direccion remota en la cual esta mi proyecto.
 
 GIT tag - Para saber si hay tags en nuestros proyectos.
@@ -25,3 +100,4 @@ GIT push origin :refs/tags/(la version o tag sin parentesis ejemplo: v0.1)
 
 
 GITk - Abre una GUI ventana informativa.
+
