@@ -98,6 +98,14 @@ COMANDO PARA ELIMINAR UN TAG DEl REPOSITORIO REMOTO *GITHUB*:
 
 GIT push origin :refs/tags/(la version o tag sin parentesis ejemplo: v0.1)
 
-
 GITk - Abre una GUI ventana informativa.
 
+--------------------SUBMODULES----------------------------------
+
+Cuando hablos de los submodulos hacemos referencia a tener uno o varios repostorios dentros de otros repositorio.
+
+git submodule add <URL de la carpeta> - Permite agragar un submodulo.
+
+INFO: 
+https://www.youtube.com/watch?v=ZYq3NJnO08U
+https://git-scm.com/book/es/v2/Herramientas-de-Git-Subm%C3%B3dulos#:~:text=Los%20subm%C3%B3dulos%20le%20permiten%20mantener,y%20mantener%20sus%20commits%20separados.
